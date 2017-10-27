@@ -1,0 +1,43 @@
+group 'com.rubiconproject'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+apply plugin: 'java'
+apply plugin: 'maven-publish'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+jar {
+    manifest {
+        attributes(
+                'Gradle-Version': GradleVersion.current().getVersion(),
+                'Implementation-Title': 'Tic Tac Toe',
+                'Main-Class': 'com.rubiconproject.tictactoe.Main'
+        )
+    }
+
+    from {
+        (configurations.compile).collect {
+            it.isDirectory() ? it : zipTree(it)
+        }
+    }
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
+}
+
+dependencies {
+    compile 'commons-io:commons-io:2.5'
+    compile 'org.apache.commons:commons-lang3:3.6'
+
+    testCompile 'junit:junit:4.12'
+}
