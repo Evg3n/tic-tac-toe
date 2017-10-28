@@ -1,4 +1,7 @@
-package com.rubiconproject.tictactoe;
+package com.rubiconproject;
+
+import com.rubiconproject.tictactoe.TicTacToe;
+import com.rubiconproject.tictactoe.factory.TicTacToeFactory;
 
 /**
  * Created by Yauheni Yudzitski <yauheni.yudzitski@gmail.com>
@@ -19,7 +22,7 @@ package com.rubiconproject.tictactoe;
  * - Choose a design that would allow easy addition of
  * alternate games where just the "win conditions" would change.
  * The size/shape of the board and the order of play do not change
- * with the diffferent versions of the game...  just the win
+ * with the different versions of the game...  just the win
  * conditions.
  * <p>
  * - While correct code is a goal, it is not the only goal ... We are looking
@@ -37,6 +40,7 @@ package com.rubiconproject.tictactoe;
  */
 public class Main {
     public static void main(String[] args) {
-
+        TicTacToe game = TicTacToeFactory.getTicTacToe();
+        game.play();
     }
 }

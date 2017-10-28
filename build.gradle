@@ -16,7 +16,7 @@ jar {
         attributes(
                 'Gradle-Version': GradleVersion.current().getVersion(),
                 'Implementation-Title': 'Tic Tac Toe',
-                'Main-Class': 'com.rubiconproject.tictactoe.Main'
+                'Main-Class': 'com.rubiconproject.Main'
         )
     }
 
@@ -36,8 +36,5 @@ publishing {
 }
 
 dependencies {
-    compile 'commons-io:commons-io:2.5'
-    compile 'org.apache.commons:commons-lang3:3.6'
-
     testCompile 'junit:junit:4.12'
 }
