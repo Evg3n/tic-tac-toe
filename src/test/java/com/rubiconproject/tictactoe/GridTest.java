@@ -54,7 +54,7 @@ public class GridTest {
     }
 
     @Test
-    public void doesNotSetNotEmptyCell() {
+    public void doesNotSetFilledCell() {
         grid.setCell(0, 0, MARK);
 
         boolean result = grid.setCell(0, 0, MARK);
