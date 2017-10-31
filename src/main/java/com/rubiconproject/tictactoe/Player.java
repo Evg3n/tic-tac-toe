@@ -6,6 +6,9 @@ import java.util.Scanner;
 
 /**
  * Created by Yauheni Yudzitski <yauheni.yudzitski@gmail.com>
+ * <p>
+ * Actor of the game with only one action available: read coordinates from the input
+ * and mark the cell on the grid with it's mark.
  */
 public class Player {
     private char mark;

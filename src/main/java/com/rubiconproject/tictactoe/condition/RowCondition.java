@@ -4,6 +4,8 @@ import com.rubiconproject.tictactoe.Grid;
 
 /**
  * Created by Yauheni Yudzitski <yauheni.yudzitski@gmail.com>
+ * <p>
+ * Checks if there is a row containing three of a kind(three X or O).
  */
 public class RowCondition implements Condition {
     @Override

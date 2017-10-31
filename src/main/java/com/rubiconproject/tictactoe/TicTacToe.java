@@ -9,6 +9,12 @@ import java.util.Scanner;
 
 /**
  * Created by Yauheni Yudzitski <yauheni.yudzitski@gmail.com>
+ * <p>
+ * The class to implement business logic of the game:
+ * - Game grid is 3x3;
+ * - There are two players(with marks X and O);
+ * - Players alternate in turn;
+ * - Game stops when one of the condition met: 3 in a row, a column or diagonally; no more moves left.
  */
 public class TicTacToe {
     private Grid grid;

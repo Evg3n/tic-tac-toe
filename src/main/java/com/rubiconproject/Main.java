@@ -37,6 +37,8 @@ import com.rubiconproject.tictactoe.factory.TicTacToeFactory;
  * description... better to ask than assume.
  * <p>
  * Be prepared to defend your choices and demonstrate your result.
+ * <p>
+ * Main class to demonstrate the Tic Tac Toe game.
  */
 public class Main {
     public static void main(String[] args) {

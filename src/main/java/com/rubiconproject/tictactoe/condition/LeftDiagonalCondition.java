@@ -4,6 +4,8 @@ import com.rubiconproject.tictactoe.Grid;
 
 /**
  * Created by Yauheni Yudzitski <yauheni.yudzitski@gmail.com>
+ * <p>
+ * Checks if top left to bottom right diagonal contains three of a kind(three X or O).
  */
 public class LeftDiagonalCondition implements Condition {
     @Override

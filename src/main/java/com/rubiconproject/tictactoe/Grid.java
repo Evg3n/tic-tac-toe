@@ -4,6 +4,8 @@ import java.util.StringJoiner;
 
 /**
  * Created by Yauheni Yudzitski <yauheni.yudzitski@gmail.com>
+ * <p>
+ * This class represents 3x3 grid to play the Tic Tac Toe game.
  */
 public class Grid {
     public static final int SIZE = 3;
